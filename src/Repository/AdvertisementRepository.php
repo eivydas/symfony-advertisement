@@ -18,7 +18,7 @@ class AdvertisementRepository extends ServiceEntityRepository
     {
         return $this->createQueryBuilder('a')
             ->where('a.publishedAt <= :now')
-            ->andWhere('a.isActive = 1')
+            ->andWhere('a.isActive = TRUE')
             ->orderBy('a.publishedAt', 'DESC')
             ->setMaxResults(50)
             ->setParameter('now', new \DateTime())

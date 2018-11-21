@@ -48,7 +48,7 @@ class AdvertisementController extends AbstractController
 
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
-            $advertisement->setIsActive(1);
+            $advertisement->setIsActive(true);
 
             $em = $this->getDoctrine()->getManager();
             $em->persist($advertisement);
