@@ -1,0 +1,25 @@
+security:
+    providers:
+        database_users:
+            entity: { class: App\Entity\User, property: username }
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+        main:
+            anonymous: true
+            form_login:
+                check_path: auth_login
+                login_path: auth_login
+                csrf_token_generator: security.csrf.token_manager
+                default_target_path: homepage
+                username_parameter: login[username]
+                password_parameter: login[password]
+            logout:
+                path: auth_logout
+                target: homepage
+    encoders:
+        App\Entity\User: bcrypt
+    access_control:
+        - { path: ^/auth, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/my, roles: ROLE_USER }

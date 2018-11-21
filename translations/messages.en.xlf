@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="title.advertisement">
+                <source>title.advertisement</source>
+                <target>Advertisement</target>
+            </trans-unit>
+            <trans-unit id="title.advertisement_new">
+                <source>title.advertisement_new</source>
+                <target>Create Advertisement</target>
+            </trans-unit>
+            <trans-unit id="title.advertisements">
+                <source>title.advertisements</source>
+                <target>Advertisements</target>
+            </trans-unit>
+            <trans-unit id="title.login">
+                <source>title.login</source>
+                <target>Login</target>
+            </trans-unit>
+            <trans-unit id="title.register">
+                <source>title.register</source>
+                <target>Register</target>
+            </trans-unit>
+            <trans-unit id="title.my_advertisements">
+                <source>title.my_advertisements</source>
+                <target>My Advertisements</target>
+            </trans-unit>
+
+            <trans-unit id="menu.homepage">
+                <source>menu.homepage</source>
+                <target>Homepage</target>
+            </trans-unit>
+            <trans-unit id="menu.advertisements">
+                <source>menu.advertisements</source>
+                <target>Advertisements</target>
+            </trans-unit>
+            <trans-unit id="menu.login">
+                <source>menu.login</source>
+                <target>Login</target>
+            </trans-unit>
+            <trans-unit id="menu.logout">
+                <source>menu.logout</source>
+                <target>Logout</target>
+            </trans-unit>
+            <trans-unit id="menu.register">
+                <source>menu.register</source>
+                <target>Register</target>
+            </trans-unit>
+            <trans-unit id="menu.my_advertisements">
+                <source>menu.my_advertisements</source>
+                <target>My Advertisements</target>
+            </trans-unit>
+
+            <trans-unit id="label.email">
+                <source>label.email</source>
+                <target>Email</target>
+            </trans-unit>
+            <trans-unit id="label.password">
+                <source>label.password</source>
+                <target>Password</target>
+            </trans-unit>
+            <trans-unit id="label.repeat_password">
+                <source>label.repeat_password</source>
+                <target>Repeat Password</target>
+            </trans-unit>
+            <trans-unit id="label.username">
+                <source>label.username</source>
+                <target>Username</target>
+            </trans-unit>
+            <trans-unit id="label.sign_in">
+                <source>label.sign_in</source>
+                <target>Sign In</target>
+            </trans-unit>
+            <trans-unit id="label.sign_up">
+                <source>label.sign_up</source>
+                <target>Sign Up</target>
+            </trans-unit>
+            <trans-unit id="label.create">
+                <source>label.create</source>
+                <target>Create</target>
+            </trans-unit>
+            <trans-unit id="label.title">
+                <source>label.title</source>
+                <target>Title</target>
+            </trans-unit>
+            <trans-unit id="label.description">
+                <source>label.description</source>
+                <target>Description</target>
+            </trans-unit>
+            <trans-unit id="label.published_at">
+                <source>label.published_at</source>
+                <target>Published At</target>
+            </trans-unit>
+            <trans-unit id="label.published_by">
+                <source>label.published_by</source>
+                <target>Published By</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

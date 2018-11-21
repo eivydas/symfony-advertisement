@@ -1,0 +1,35 @@
+{% extends 'app.html.twig' %}
+
+{% block title %}{{ 'title.advertisements'|trans }}{% endblock %}
+
+{% block main %}
+    {% if app.user %}
+        <div class="section actions">
+            <a href="{{ path('advertisements_new') }}" class="btn btn-success">
+                <i class="fas fa-plus"></i> {{ 'label.create'|trans }}
+            </a>
+        </div>
+        <br>
+    {% endif %}
+
+    <div class="row">
+        {% for advertisement in advertisements %}
+            <div class="advertisement col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-header">
+                        <a href="{{ path('advertisements_show', {id: advertisement.id}) }}">
+                            {{ advertisement.title }}
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">{{ advertisement.description }}</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">{{ advertisement.user.username }}</small>
+                            <small class="text-muted">{{ advertisement.publishedAt|date }}</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

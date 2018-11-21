@@ -1,0 +1,17 @@
+{% extends 'app.html.twig' %}
+
+{% block title %}{{ 'title.advertisement'|trans }}{% endblock %}
+
+{% block main %}
+<div class="row">
+    <div class="col-md-12">
+        <h1>{{ advertisement.title }}</h1>
+        <p>{{ advertisement.description }}</p>
+        <hr>
+        <ul class="text-muted">
+            <li>{{ 'label.published_by'|trans }} {{ advertisement.user.username }}</li>
+            <li>{{ 'label.published_at'|trans }} {{ advertisement.publishedAt|date }}</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'app.html.twig' %}
+
+{% block title %}{{ 'title.register'|trans }}{% endblock %}
+
+{% block main %}
+    <h1><i class="fas fa-user"></i> {{ 'title.register'|trans }}</h1>
+
+    {{ form_start(form) }}
+    {{ form_row(form.username) }}
+    {{ form_row(form.email) }}
+    {{ form_row(form.password.first) }}
+    {{ form_row(form.password.second) }}
+
+    <button type="submit" class="btn btn-primary">{{ 'label.sign_up'|trans }}</button>
+    {{ form_end(form) }}
+{% endblock %}
